@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.page{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./images/background-img.jpeg');
+    background-size: cover;
+}
+
+.part-1{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(black, transparent);
+    position: relative;
+}
+
+.nav-1 h1{
+    color: white;
+    font-size: 2.5em;
+}
+
+nav{
+    width: 90%;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    position:sticky;
+    top: 0;
+    left: 0;
+    margin: auto;
+}
+
+.nav-1{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.nav-2{
+    display: flex;
+    justify-content:end;
+    width: 50%;
+}
+
+.nav-2 a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding-top: 10px;
+    margin-right: 30px;
+}
+
+
+.nav-2 .login{
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+main{
+    width: 100%;
+    text-align: center;
+    padding-top: 15%;
+}
+
+.main-heading h1{
+    color: white;
+    font-size: 7em;
+}
+
+.btn{
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, rgb(179, 56, 56), rgb(226, 61, 19));
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 35px;
+}
+
+.part-2{
+    width: 100vw;
+    height: 170vh;
+    background-color: rgb(37, 36, 36);
+    padding-top: 50px;
+}
+
+.persons-container{
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.person{
+    width: 30%;
+    height: 100%;
+    border: 1px solid gray;
+    border-radius: 15px;
+    color: white;
+    padding: 30px;
+}
+
+.person h3{
+    line-height: 40px;
+    border-bottom: 1px solid gray;
+}
+
+.person p{
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.interact{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.interact .optns h4, p{
+    margin-top: 15px;
+}
+
+.social-icons{
+    margin-top: 15px;
+    width: 150px;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.line{
+    width: 90%;
+    border: 1px solid gray;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.download{
+    width: 90%;
+    margin: auto;
+    color: white;
+    padding-top: 40px;
+    position: relative;
+}
+
+.download h3{
+    margin-bottom: 50px;
+}
+
+.apple{
+    width: 200px;
+    height: 55px;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 30px;
+    left: 12%;
+    padding: 10px;
+}
+
+.apple p span{
+    display: block;
+    font-size: 1.5em;
+}
+
+.apple i{
+    font-size: 2em;
+}
+
+.apple p{
+    margin-top: 0px;
+    font-size: 0.8em;
+}
+
+.apple.play{
+    left: 35%;
+}
+
+.credits{
+    width: 90%;
+    color: white;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 50px;
+}
+
+nav a:hover{
+    color: orangered;
+}
+
+nav a{
+    position: relative;
+}
+
+nav a::before{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: orangered;
+    border-radius: 3px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
